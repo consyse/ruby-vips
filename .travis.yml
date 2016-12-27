@@ -41,16 +41,6 @@ before_install:
   - >
     CXXFLAGS=-D_GLIBCXX_USE_CXX11_ABI=0
     ./configure
-    --disable-debug
-    --disable-dependency-tracking
-    --disable-introspection
-    --disable-static
-    --enable-gtk-doc-html=no
-    --enable-gtk-doc=no
-    --enable-pyvips8=no
-    --without-orc
-    --without-python
-    $1
   - make
   - sudo make install
   - sudo ldconfig
