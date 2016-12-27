@@ -55,4 +55,3 @@ before_install:
   - sudo make install
   - sudo ldconfig
   - cd ..
-  - yes '' | pecl install vips
