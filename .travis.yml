@@ -5,12 +5,23 @@ env:
 env:
   - LIBVIPS=8.4.4
 
+dist: trusty
+
 addons:
   apt:
     packages:
-      - gobject-introspection
+      - libxml2-dev
+      - gettext
+      - libgtk2.0-dev
+      - python-dev
+      - liblcms1-dev
+      - liboil-dev
+      - libmagickwand-dev
+      - libopenexr-dev
       - libcfitsio3-dev
-      - libfftw3-dev
+      - gobject-introspection
+      - flex
+      - bison
       - libgif-dev
       - libgs-dev
       - libgsf-1-dev
@@ -20,6 +31,11 @@ addons:
       - libpango1.0-dev
       - libpoppler-glib-dev
       - libwebp-dev
+      - automake
+      - libtool
+      - swig
+      - gtk-doc-tools
+      - libglib2.0-dev
 
 language: ruby
 rvm:
